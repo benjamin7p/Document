@@ -3,17 +3,42 @@
  
  If you completed the exercise Structs, Instances, and Default Values, you created a `GPS` struct with default values for properties of `latitude` and `longitude`. Create your `GPS` struct again, but this time do not provide default values. Both properties should be of type `Double`.
  */
+struct GPS {
+    var longitude: Double
+    var latitude: Double
+    
+    
+}
+
 
 
 /*:
  Now create a constant instance of `GPS` called `somePlace`, and use the memberwise initializer to set `latitude` to 51.514004, and `longitude` to 0.125226. Print the values of `somePlace`'s properties.
  */
+let somePlace = GPS.init(longitude: 0.125226, latitude: 51.514004)
+print(somePlace)
+
+
+
+
 
 
 /*:
  In Structs, Instance, and Default Values, you also created a `Book` struct. Creat this struct again without default values. Give each property appropriate types. Declare your `favoriteBook` instance and pass in the values of your favorite book using the memberwise initializer. Print a statement about your favorite book using `favoriteBook`'s properties.
  */
+struct Book {
+    var title: String
+    var author: String
+    var page: Int
+    var price: Double
+}
 
+var favoriteBook = Book.init(title: "Fear and Loathing", author: "Hunter S. Tompson", page: 34, price: 5.89)
+
+print(favoriteBook.title)
+print(favoriteBook.author)
+print(favoriteBook.page)
+print(favoriteBook.price)
 
 /*:
  Make a `Height` struct with two variable properties, `heightInInches` and `heightInCentimeters`. Both should be of type `Double`.
@@ -22,6 +47,19 @@
  
  - Example: If you use the initializer for inches to pass in a height of 65, the initializer should set `heightInInches` to 65 and `heightInCentimeters` to 165.1.
  */
+struct Height{
+    var heightInInches: Double
+    var heightInCentimeters: Double
+    
+}
+
+let heightInInches = 65.0
+let heightInCentimeters = (heightInInches / 2.54)
+
+var newHeight = Height.init(heightInInches: 65.0, heightInCentimeters: 165.1)
+print(newHeight)
+
+
 
 
 /*:

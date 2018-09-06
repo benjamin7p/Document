@@ -41,11 +41,15 @@ struct Book {
  */
 var favoriteBook = Book()
 print(favoriteBook)
-favortieBook.title = "Fear and Loathing"
+favoriteBook.title = "Fear and Loathing"
 favoriteBook.author = "Hunter S. Tompson"
 favoriteBook.pages = 412
 favoriteBook.price = 4.13
 
-
+print(favoriteBook)
+print(favoriteBook.title)
+print(favoriteBook.author)
+print(favoriteBook.pages)
+print(favoriteBook.price)
 
 //: page 1 of 10  |  [Next: App Exercise - Workout Tracking](@next)
