@@ -86,5 +86,7 @@ print(height.heightInCentimeters)
  Now create a variable instance of `Height` called `myHeight` and initialize it with your own height. Verify that both `heightInInches` and `heightInCentimeters` are accurate.
  */
 var myHeight = Height (heightInInches: 71)
+print(myHeight)
+
 
 //: [Previous](@previous)  |  page 3 of 10  |  [Next: App Exercise - Users and Distance](@next)
