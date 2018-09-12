@@ -23,6 +23,7 @@ print(somePlace)
 
 
 
+
 /*:
  In Structs, Instance, and Default Values, you also created a `Book` struct. Creat this struct again without default values. Give each property appropriate types. Declare your `favoriteBook` instance and pass in the values of your favorite book using the memberwise initializer. Print a statement about your favorite book using `favoriteBook`'s properties.
  */
@@ -33,12 +34,14 @@ struct Book {
     var price: Double
 }
 
-var favoriteBook = Book.init(title: "Fear and Loathing", author: "Hunter S. Tompson", page: 34, price: 5.89)
+let favoriteBook = Book.init(title: "Fear and Loathing", author: "Hunter S. Tompson", page: 34, price: 5.89)
 
 print(favoriteBook.title)
 print(favoriteBook.author)
 print(favoriteBook.page)
 print(favoriteBook.price)
+print(favoriteBook.author,favoriteBook.page)
+
 
 /*:
  Make a `Height` struct with two variable properties, `heightInInches` and `heightInCentimeters`. Both should be of type `Double`.
@@ -48,17 +51,29 @@ print(favoriteBook.price)
  - Example: If you use the initializer for inches to pass in a height of 65, the initializer should set `heightInInches` to 65 and `heightInCentimeters` to 165.1.
  */
 struct Height{
-    var heightInInches: Double
-    var heightInCentimeters: Double
+    let heightInInches: Double
+    let heightInCentimeters: Double
     
+    init(heightInInches: Double) {
+        self.heightInInches = heightInInches
+        self.heightInCentimeters = heightInInches * 2.54
+        
+        
+    }
+    init(heightInCentimeters: Double) {
+        self.heightInCentimeters = heightInCentimeters
+        self.heightInInches = heightInCentimeters / 2.54
+        
+    }
 }
 
-let heightInInches = 65.0
-let heightInCentimeters = (heightInInches / 2.54)
 
-var newHeight = Height.init(heightInInches: 65.0, heightInCentimeters: 165.1)
-print(newHeight)
 
+
+
+
+let height = Height(heightInInches: 65)
+print(height.heightInCentimeters)
 
 
 

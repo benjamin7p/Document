@@ -7,6 +7,12 @@
  
  As an example, write a function that only does a portion of what your previous `pacing` function did. This function will be called `calculatePace`. It should take three `Double` arguments called `currentDistance`, `totalDistance`, and `currentTime`, and should return a `Double` that will represent the time at which the user will finish the run based on the user's current distance and time. call the function and print the return value.
  */
+func calculatePace(currentDistance: Double, totalDistance: Double, currentTime: Double) -> Double {
+    var status = currentDistance - totalDistance
+    print(status)
+    return
+}
+calculatePace(currentDistance: 12.0, totalDistance: 13.0, currentTime: 4.0)
 
 
 /*:
