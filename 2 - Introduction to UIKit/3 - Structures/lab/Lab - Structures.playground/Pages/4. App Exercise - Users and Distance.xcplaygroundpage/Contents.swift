@@ -52,11 +52,13 @@ print(benDistance)
 /*:
  Now create an instance of `Distance` called `mile`. Use the initializer for meters to set the distance to 1600. Print out the property for feet and verify that it is equal to 5249.344.
  */
-
+let mile = Distance(meters: 1600)
+print(mile)
 
 /*:
  Now create another instance of `Distance` and give it some other distance. Ensure that both properties are set correctly.
  */
-
+let inches = Distance(feet: 0.12)
+print(inches)
 
 //: [Previous](@previous)  |  page 4 of 10  |  [Next: Exercise - Methods](@next)

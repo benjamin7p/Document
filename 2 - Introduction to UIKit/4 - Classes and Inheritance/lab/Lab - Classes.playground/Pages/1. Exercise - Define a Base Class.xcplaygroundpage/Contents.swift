@@ -11,18 +11,46 @@ class Spaceship {
     var position = 0
     
     
-    
+    init(name: String){
+        self.name = name
+    }
+    func moveLeft(){
+        position -= 1
+    }
+    func moveRight(){
+        position += 1
+    }
+    func wasHit(){
+        health -= 5
+        if health => 0 {
+            <#code#>
+        }
+    }
 }
 
 /*:
  Create a `let` constant called `falcon` and assign it to an instance of `Spaceship`. After initialization, set `name` to "Falcon".
  */
-let falcon: Spaceship
+let falcon = Spaceship(name: "falcon")
+print(falcon.name)
+
+
 
 
 /*:
  Go back and add a method called `moveLeft()` to the definition of `Spaceship`. This method should adjust the position of the spaceship to the left by one. Add a similar method called `moveRight()` that moves the spaceship to the right. Once these methods exist, use them to move `falcon` to the left twice and to the right once. Print the new position of `falcon` after each change in position.
  */
+falcon.moveLeft()
+print(falcon.position)
+
+falcon.moveLeft()
+print(falcon.position)
+
+falcon.moveRight()
+print(falcon.position)
+
+
+
 
 
 /*:
