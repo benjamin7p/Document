@@ -22,8 +22,8 @@ class Spaceship {
     }
     func wasHit(){
         health -= 5
-        if health => 0 {
-            <#code#>
+        if health <= 0 {
+            print("sorry your ship was hit too many times. would you like to play again?")
         }
     }
 }
@@ -56,6 +56,7 @@ print(falcon.position)
 /*:
  The last thing `Spaceship` needs for this example is a method to handle what happens if the ship gets hit. Go back and add a method `wasHit()` to `Spaceship` that will decrement the ship's health by 5, then if `health` is less than or equal to 0 will print "Sorry. Your ship was hit one too many times. Do you want to play again?" Once this method exists, call it on `falcon` and print out the value of `health`.
  */
-
+falcon.wasHit()
+print(falcon.health)
 
 //: page 1 of 4  |  [Next: Exercise - Create a Subclass](@next)

@@ -10,12 +10,18 @@ import Foundation
  */
 let cadence: Double = 180
 var testSteps = 0
-
+while testSteps != 10{
+    testSteps += 1
+    print("take a step")
+    Thread.sleep(forTimeInterval: 60/cadence)
+}
 
 /*:
  Recreate the above cadence example using a repeat-while loop.
  */
 testSteps = 0 
 
-
+repeat {
+    testSteps += 1
+} while testSteps != 10
 //: [Previous](@previous)  |  page 4 of 6  |  [Next: Exercise - Control Transfer Statements](@next)

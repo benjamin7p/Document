@@ -26,7 +26,8 @@ struct Post {
         print(likes)
 }
 }
-var addLike = Post(message: "yes", likes: 1, numberOfComments: 1)
+
+var addLike = Post(message: "you have", likes: 1, numberOfComments: 1)
 addLike.like()
 print(addLike)
 
