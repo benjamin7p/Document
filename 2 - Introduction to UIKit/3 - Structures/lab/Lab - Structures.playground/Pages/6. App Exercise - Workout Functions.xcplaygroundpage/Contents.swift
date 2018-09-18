@@ -29,4 +29,6 @@ struct Steps {
     return steps += 1
     }
 }
+Steps(steps: 20, goal: 40)
+print(Steps)
 //: [Previous](@previous)  |  page 6 of 10  |  [Next: Exercise - Computed Properties and Property Observers](@next)
