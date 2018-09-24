@@ -6,7 +6,14 @@
 struct Rectangle {
     var width: Int
     var height: Int
+    
+    func area() -> Int{
+        return width * height
+    }
 }
+let someArea = Rectangle(width: 5, height: 10)
+let area = someArea.area()
+print(area)
 /*:
  In the `Height` struct below, height is represented in both inches and centimeters. However, if `heightInInches` is changed, `heightInCentimeters` should also adjust to match it. Add a `didSet` to each property that will check if the other property is what it should be, and if not, sets the proper value. If you set the value of the other property even though it already has the right value, you will end up with an infinite loop of each property setting the other.
  
@@ -27,4 +34,9 @@ struct Height {
         self.heightInInches = heightInCentimeters/2.54
     }
 }
+let height = Height(heightInCentimeters: 65)
+print(height.heightInCentimeters)
+
+let newHeight = Height(heightInCentimeters: 87)
+print(newHeight.heightInInches)
 //: [Previous](@previous)  |  page 7 of 10  |  [Next: App Exercise - Mile Times and Congratulations](@next)

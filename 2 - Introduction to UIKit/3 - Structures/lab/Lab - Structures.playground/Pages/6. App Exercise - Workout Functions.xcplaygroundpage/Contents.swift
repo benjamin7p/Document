@@ -25,10 +25,12 @@ struct Steps {
     var steps: Int
     var goal: Int
     
-    var takeStep: Int{
+    mutating func takeSteps() {
     return steps += 1
     }
 }
-Steps(steps: 20, goal: 40)
-print(Steps)
+var steps = Steps(steps: 10, goal: 20)
+steps.takeSteps()
+
+print(steps)
 //: [Previous](@previous)  |  page 6 of 10  |  [Next: Exercise - Computed Properties and Property Observers](@next)
