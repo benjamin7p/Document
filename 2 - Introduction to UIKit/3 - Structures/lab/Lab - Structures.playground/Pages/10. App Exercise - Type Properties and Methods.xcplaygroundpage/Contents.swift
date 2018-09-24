@@ -14,13 +14,12 @@ struct RunningWorkout {
     var time: Double
     var elevation: Double
     func mileTimeFor(distance: Double, time: Double) -> Double {
-        let average = distance / time
+        let average = time / distance * 1600
         return average
     }
 }
-let average = RunningWorkout(distance: 1600, time: 5.32, elevation: 1450)
-RunningWorkout.mileTimeFor(average)
-print(average)
+let currentWorkout = RunningWorkout(distance: 1600, time: 5.1, elevation: 30    )
+print(currentWorkout.mileTimeFor(distance: 1600, time: 5.0))
 
 
 /*:
