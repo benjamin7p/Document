@@ -10,6 +10,20 @@ import UIKit
  
  Write a failable initializer that takes parameters for your start and end times, and then checks to see if they are greater than 10 seconds apart using a guard statement. If they are, your initializer should fail. Otherwise, the initializer should set the properties accordingly.
  */
+struct Workout {
+    var startTime: Double
+    var endTime: Double
+    
+    init?(startTime: Double, endTime: Double) {
+        self.startTime = startTime
+        self.endTime = endTime
+        
+        guard endTime - startTime >= 10 else {return nil}
+    }
+}
+Workout(startTime: 5, endTime: 7)
+let workout1 = Workout(startTime: 20, endTime: 50)
+print(workout1)
 
 
 /*:

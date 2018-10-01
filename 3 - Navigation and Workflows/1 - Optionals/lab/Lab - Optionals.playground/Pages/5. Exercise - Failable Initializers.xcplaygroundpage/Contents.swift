@@ -21,6 +21,15 @@ struct Computer {
 /*:
  Create two instances of `Computer?` using the failable initializer. One instance should use values that will have a value within the optional, and the other should result in `nil`. Use if-let syntax to unwrap each of the `Computer?` objects and print the `ram` and `yearManufactured` if the optional contains a value.
  */
-
+let computerOne = Computer(ram: 12, yearManufactured: 2000)
+let computerTwo = Computer(ram: 0, yearManufactured: 2018)
+if let computer1 = computerOne {
+    print("computer has \(computer1.ram) ram, and was manufactured in \(computer1.yearManufactured)")
+}
+if let computer2 = computerTwo {
+    print("computer has \(computer2.ram) ram and was manufactured in \(computer2.yearManufactured)")
+}
+print(computerOne)
+print(computerTwo)
 
 //: [Previous](@previous)  |  page 5 of 6  |  [Next: App Exercise - Workout or Nil](@next)
