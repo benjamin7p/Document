@@ -22,11 +22,13 @@ struct Workout {
         } else {
             return nil
         }
+        
 }
 
 /*:
  Try to initialize two instances of a `Workout` object and print each of them. One of them should not be initialized because the start and end times are too close together. The other should successfully initialize a `Workout` object.
  */
+
 
 
 /*:
