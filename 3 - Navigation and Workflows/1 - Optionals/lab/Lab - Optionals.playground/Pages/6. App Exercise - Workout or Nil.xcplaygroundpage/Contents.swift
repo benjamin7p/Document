@@ -10,7 +10,7 @@
  Write a failable initializer that takes parameters for your start and end times, and then checks to see if they are fewer than 10 seconds apart. If they are, your initializer should fail. Otherwise, they should set the properties accordingly.
  */
 struct Workout {
-    var startTime: Double
+    var startTime: Double = 28800
     var endTime: Double
     
     init?(startTime: Double, endTime: Double) {
@@ -22,7 +22,7 @@ struct Workout {
         } else {
             return nil
         }
-        
+    }
 }
 
 /*:

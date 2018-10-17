@@ -13,6 +13,14 @@ struct User {
     self.name = name
     self.stepsToday = stepsToday
     }
+    init?(name: String, stepsToday: Int){
+        if name == "" || stepsToday <= 0 {
+            return nil
+        } else {
+            self.name = name
+            self.stepsToday = stepsToday
+        }
+    }
 }
 
 let stepMaster = User(name: "StepMaster", stepsToday: 8394)
@@ -44,7 +52,6 @@ func getWinner(competitors: [User]) -> User? {
 /*:
  Write a memberwise initializer inside the `User` struct above that uses variable shadowing for naming the parameters of the initializer.
  */
-
 
 /*:
  Now write a failable initializer inside the `User` struct above that takes parameters `name` and `stepsToday` as an optional `String` and `Int`, respectively. The initializer should return `nil` if either of the parameters are `nil`. Use variable shadowing when unwrapping the two parameters.
