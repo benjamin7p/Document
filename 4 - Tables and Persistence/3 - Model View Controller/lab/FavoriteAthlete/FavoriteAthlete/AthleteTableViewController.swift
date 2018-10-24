@@ -32,7 +32,13 @@ class AthleteTableViewController: UITableViewController {
         return cell
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? AthleteFormViewController {
+            if let indexPath = tableView.indexPathForSelectedRow,
+                segue.identifier == PropertyKeys.editAthleteSegue {
+                destination.athlete = athletes[indexPath.row]
+                
+            }
     /*
     // MARK: - Navigation
 
@@ -41,4 +47,6 @@ class AthleteTableViewController: UITableViewController {
     }
  */
 
+}
+}
 }
