@@ -17,19 +17,20 @@ class AthleteFormViewController: UIViewController {
     func updateView() {
         guard let athlete = athlete else {return}
     
+        // need to assign values from
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         updateView()
     }
     
-    @IBAction func athleteInfoSaveButton(_ sender: Any) {
+    @IBAction func athleteInfoSaveButton(_ sender: UIButton) {
         guard let name = nameTextField.text,
         let age = ageTextField.text,
             let leage = leageTextField.text,
             let team = teamTextField.text else {return}
         athlete = Athlete(name: name, age: age, leage: leage, team: team)
-        
+        performSegue(withIdentifier: "UnwindToAthleteTable", sender: self)
        
     }
 }

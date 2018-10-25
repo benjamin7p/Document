@@ -39,14 +39,20 @@ class AthleteTableViewController: UITableViewController {
                 destination.athlete = athletes[indexPath.row]
                 
             }
-    /*
-    // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+            
+            
+        }
     }
- */
-
-}
-}
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+        guard let source = segue.source as? AthleteFormViewController, let athlete = source.athlete else {return}
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            athletes.remove(at: indexPath.row)
+            athletes.insert(athlete, at: indexPath.row)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }else{
+            athletes.append(athlete)
+        }
+    }
+    
 }

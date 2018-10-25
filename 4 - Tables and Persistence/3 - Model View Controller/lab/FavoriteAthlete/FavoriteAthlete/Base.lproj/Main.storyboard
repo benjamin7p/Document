@@ -130,7 +130,6 @@
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="athleteInfoSaveButton:" destination="8K9-2q-IXD" eventType="touchUpInside" id="uBB-Xn-Biz"/>
-                                    <action selector="saveButtonTapped:" destination="8K9-2q-IXD" eventType="touchUpInside" id="hY9-aI-8LA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -149,14 +148,10 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="V1y-YK-nLQ"/>
                     <connections>
                         <outlet property="ageTextField" destination="6DH-j1-SLF" id="6Y9-re-8DD"/>
-                        <outlet property="athleteAgeEntered" destination="6DH-j1-SLF" id="lUy-Yt-bVt"/>
-                        <outlet property="athleteLeageEntered" destination="Aap-hH-FNd" id="ATo-q9-VuP"/>
-                        <outlet property="athleteNameEntered" destination="U3J-R0-1jS" id="Slv-jT-W0f"/>
-                        <outlet property="athleteTeamEntered" destination="rKE-v9-NBr" id="hca-Kw-uLa"/>
-                        <outlet property="leagueTextField" destination="Aap-hH-FNd" id="NAj-bV-GJQ"/>
+                        <outlet property="leageTextField" destination="Aap-hH-FNd" id="ol4-BE-IzF"/>
                         <outlet property="nameTextField" destination="U3J-R0-1jS" id="WV2-Wc-aLC"/>
                         <outlet property="teamTextField" destination="rKE-v9-NBr" id="MJO-gY-cwo"/>
-                        <segue destination="wFc-3q-vwq" kind="unwind" identifier="UnwindToAthleteTable" unwindAction="prepareForUnwindWithSegue:" id="HPS-Df-mzT"/>
+                        <segue destination="wFc-3q-vwq" kind="unwind" identifier="UnwindToAthleteTable" unwindAction="prepareForUnwindWithSegue:" id="7d6-h5-6kF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrL-ji-oiy" sceneMemberID="firstResponder"/>
