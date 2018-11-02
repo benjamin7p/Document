@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AD481562189EE0C005E22B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD481552189EE0C005E22B8 /* AppDelegate.swift */; };
+		9AD481582189EE0C005E22B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD481572189EE0C005E22B8 /* ViewController.swift */; };
+		9AD4815B2189EE0C005E22B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD481592189EE0C005E22B8 /* Main.storyboard */; };
+		9AD4815D2189EE0D005E22B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD4815C2189EE0D005E22B8 /* Assets.xcassets */; };
+		9AD481602189EE0D005E22B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD4815E2189EE0D005E22B8 /* LaunchScreen.storyboard */; };
+		9AD4816B2189EE0D005E22B8 /* BiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4816A2189EE0D005E22B8 /* BiosTests.swift */; };
+		9AD481762189EE0D005E22B8 /* BiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD481752189EE0D005E22B8 /* BiosUITests.swift */; };
+		9AD481842189F4C5005E22B8 /* Bio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD481832189F4C5005E22B8 /* Bio.swift */; };
+		9AD481862189F769005E22B8 /* BioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD481852189F769005E22B8 /* BioTableViewCell.swift */; };
+		9AD481882189FFE2005E22B8 /* detailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD481872189FFE2005E22B8 /* detailTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AD481672189EE0D005E22B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AD4814A2189EE0C005E22B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD481512189EE0C005E22B8;
+			remoteInfo = Bios;
+		};
+		9AD481722189EE0D005E22B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AD4814A2189EE0C005E22B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD481512189EE0C005E22B8;
+			remoteInfo = Bios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AD481522189EE0C005E22B8 /* Bios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD481552189EE0C005E22B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AD481572189EE0C005E22B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AD4815A2189EE0C005E22B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AD4815C2189EE0D005E22B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AD4815F2189EE0D005E22B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AD481612189EE0D005E22B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD481662189EE0D005E22B8 /* BiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD4816A2189EE0D005E22B8 /* BiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiosTests.swift; sourceTree = "<group>"; };
+		9AD4816C2189EE0D005E22B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD481712189EE0D005E22B8 /* BiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD481752189EE0D005E22B8 /* BiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiosUITests.swift; sourceTree = "<group>"; };
+		9AD481772189EE0D005E22B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD481832189F4C5005E22B8 /* Bio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bio.swift; sourceTree = "<group>"; };
+		9AD481852189F769005E22B8 /* BioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioTableViewCell.swift; sourceTree = "<group>"; };
+		9AD481872189FFE2005E22B8 /* detailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AD4814F2189EE0C005E22B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD481632189EE0D005E22B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD4816E2189EE0D005E22B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AD481492189EE0C005E22B8 = {
+			isa = PBXGroup;
+			children = (
+				9AD481542189EE0C005E22B8 /* Bios */,
+				9AD481692189EE0D005E22B8 /* BiosTests */,
+				9AD481742189EE0D005E22B8 /* BiosUITests */,
+				9AD481532189EE0C005E22B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AD481532189EE0C005E22B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AD481522189EE0C005E22B8 /* Bios.app */,
+				9AD481662189EE0D005E22B8 /* BiosTests.xctest */,
+				9AD481712189EE0D005E22B8 /* BiosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AD481542189EE0C005E22B8 /* Bios */ = {
+			isa = PBXGroup;
+			children = (
+				9AD481552189EE0C005E22B8 /* AppDelegate.swift */,
+				9AD481832189F4C5005E22B8 /* Bio.swift */,
+				9AD481572189EE0C005E22B8 /* ViewController.swift */,
+				9AD481852189F769005E22B8 /* BioTableViewCell.swift */,
+				9AD481592189EE0C005E22B8 /* Main.storyboard */,
+				9AD481872189FFE2005E22B8 /* detailTableViewController.swift */,
+				9AD4815C2189EE0D005E22B8 /* Assets.xcassets */,
+				9AD4815E2189EE0D005E22B8 /* LaunchScreen.storyboard */,
+				9AD481612189EE0D005E22B8 /* Info.plist */,
+			);
+			path = Bios;
+			sourceTree = "<group>";
+		};
+		9AD481692189EE0D005E22B8 /* BiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4816A2189EE0D005E22B8 /* BiosTests.swift */,
+				9AD4816C2189EE0D005E22B8 /* Info.plist */,
+			);
+			path = BiosTests;
+			sourceTree = "<group>";
+		};
+		9AD481742189EE0D005E22B8 /* BiosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AD481752189EE0D005E22B8 /* BiosUITests.swift */,
+				9AD481772189EE0D005E22B8 /* Info.plist */,
+			);
+			path = BiosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AD481512189EE0C005E22B8 /* Bios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD4817A2189EE0D005E22B8 /* Build configuration list for PBXNativeTarget "Bios" */;
+			buildPhases = (
+				9AD4814E2189EE0C005E22B8 /* Sources */,
+				9AD4814F2189EE0C005E22B8 /* Frameworks */,
+				9AD481502189EE0C005E22B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bios;
+			productName = Bios;
+			productReference = 9AD481522189EE0C005E22B8 /* Bios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AD481652189EE0D005E22B8 /* BiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD4817D2189EE0D005E22B8 /* Build configuration list for PBXNativeTarget "BiosTests" */;
+			buildPhases = (
+				9AD481622189EE0D005E22B8 /* Sources */,
+				9AD481632189EE0D005E22B8 /* Frameworks */,
+				9AD481642189EE0D005E22B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AD481682189EE0D005E22B8 /* PBXTargetDependency */,
+			);
+			name = BiosTests;
+			productName = BiosTests;
+			productReference = 9AD481662189EE0D005E22B8 /* BiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AD481702189EE0D005E22B8 /* BiosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD481802189EE0D005E22B8 /* Build configuration list for PBXNativeTarget "BiosUITests" */;
+			buildPhases = (
+				9AD4816D2189EE0D005E22B8 /* Sources */,
+				9AD4816E2189EE0D005E22B8 /* Frameworks */,
+				9AD4816F2189EE0D005E22B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AD481732189EE0D005E22B8 /* PBXTargetDependency */,
+			);
+			name = BiosUITests;
+			productName = BiosUITests;
+			productReference = 9AD481712189EE0D005E22B8 /* BiosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AD4814A2189EE0C005E22B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Benjamin Poulsen PRO";
+				TargetAttributes = {
+					9AD481512189EE0C005E22B8 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					9AD481652189EE0D005E22B8 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9AD481512189EE0C005E22B8;
+					};
+					9AD481702189EE0D005E22B8 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9AD481512189EE0C005E22B8;
+					};
+				};
+			};
+			buildConfigurationList = 9AD4814D2189EE0C005E22B8 /* Build configuration list for PBXProject "Bios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AD481492189EE0C005E22B8;
+			productRefGroup = 9AD481532189EE0C005E22B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AD481512189EE0C005E22B8 /* Bios */,
+				9AD481652189EE0D005E22B8 /* BiosTests */,
+				9AD481702189EE0D005E22B8 /* BiosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AD481502189EE0C005E22B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD481602189EE0D005E22B8 /* LaunchScreen.storyboard in Resources */,
+				9AD4815D2189EE0D005E22B8 /* Assets.xcassets in Resources */,
+				9AD4815B2189EE0C005E22B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD481642189EE0D005E22B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD4816F2189EE0D005E22B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AD4814E2189EE0C005E22B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD481582189EE0C005E22B8 /* ViewController.swift in Sources */,
+				9AD481842189F4C5005E22B8 /* Bio.swift in Sources */,
+				9AD481862189F769005E22B8 /* BioTableViewCell.swift in Sources */,
+				9AD481562189EE0C005E22B8 /* AppDelegate.swift in Sources */,
+				9AD481882189FFE2005E22B8 /* detailTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD481622189EE0D005E22B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD4816B2189EE0D005E22B8 /* BiosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD4816D2189EE0D005E22B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD481762189EE0D005E22B8 /* BiosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AD481682189EE0D005E22B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AD481512189EE0C005E22B8 /* Bios */;
+			targetProxy = 9AD481672189EE0D005E22B8 /* PBXContainerItemProxy */;
+		};
+		9AD481732189EE0D005E22B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AD481512189EE0C005E22B8 /* Bios */;
+			targetProxy = 9AD481722189EE0D005E22B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AD481592189EE0C005E22B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AD4815A2189EE0C005E22B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AD4815E2189EE0D005E22B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AD4815F2189EE0D005E22B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AD481782189EE0D005E22B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AD481792189EE0D005E22B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AD4817B2189EE0D005E22B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.Bios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AD4817C2189EE0D005E22B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.Bios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AD4817E2189EE0D005E22B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.BiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bios.app/Bios";
+			};
+			name = Debug;
+		};
+		9AD4817F2189EE0D005E22B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.BiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bios.app/Bios";
+			};
+			name = Release;
+		};
+		9AD481812189EE0D005E22B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.BiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bios;
+			};
+			name = Debug;
+		};
+		9AD481822189EE0D005E22B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = coffee.BiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AD4814D2189EE0C005E22B8 /* Build configuration list for PBXProject "Bios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD481782189EE0D005E22B8 /* Debug */,
+				9AD481792189EE0D005E22B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD4817A2189EE0D005E22B8 /* Build configuration list for PBXNativeTarget "Bios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD4817B2189EE0D005E22B8 /* Debug */,
+				9AD4817C2189EE0D005E22B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD4817D2189EE0D005E22B8 /* Build configuration list for PBXNativeTarget "BiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD4817E2189EE0D005E22B8 /* Debug */,
+				9AD4817F2189EE0D005E22B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD481802189EE0D005E22B8 /* Build configuration list for PBXNativeTarget "BiosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD481812189EE0D005E22B8 /* Debug */,
+				9AD481822189EE0D005E22B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AD4814A2189EE0C005E22B8 /* Project object */;
+}

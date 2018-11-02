@@ -1,26 +1,36 @@
+//
+//  BookFormTableViewController.swift
+//  FavoriteBooks
+//
+//  Created by Benjamin Poulsen PRO on 11/1/18.
+//
 
 import UIKit
 
-class BookFormViewController: UIViewController {
-    
-   
-    
+class BookFormTableViewController: UITableViewController {
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var authorTextField: UITextField!
+    @IBOutlet weak var genreTextField: UITextField!
+    @IBOutlet weak var lengthTextField: UITextField!
     
     struct PropertyKeys {
         static let unwind = "UnwindToBookTable"
     }
     
     var book: Book?
-    
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var authorTextField: UITextField!
-    @IBOutlet weak var genreTextField: UITextField!
-    @IBOutlet weak var lengthTextField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         updateView()
+       
+        
+        
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     func updateView() {
@@ -32,8 +42,7 @@ class BookFormViewController: UIViewController {
         lengthTextField.text = book.length
     }
     
-   
-    
+
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let title = titleTextField.text,
             let author = authorTextField.text,
@@ -42,6 +51,7 @@ class BookFormViewController: UIViewController {
         
         book = Book(title: title, author: author, genre: genre, length: length)
         performSegue(withIdentifier: PropertyKeys.unwind, sender: self)
+        
     }
     
 }
