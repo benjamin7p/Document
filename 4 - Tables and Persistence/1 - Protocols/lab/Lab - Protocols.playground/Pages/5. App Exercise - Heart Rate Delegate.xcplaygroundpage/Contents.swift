@@ -34,6 +34,13 @@ class HeartRateViewController: UIViewController {
 /*:
  First, create an instance of `HeartRateReceiver` and call `startHeartRateMonitoringExample`. Notice that every two seconds `currentHR` get set and prints the new heart rate reading to the console.
  */
+let heartRate = HeartRateReceiver(currentHR)
+startHeartRateMonitoringExample()
+
+
+
+let runningWorkout = RunningWorkout(distance: 4.5, time: 1.2)
+simpleWorkoutDescription(workout: runningWorkout)
 
 
 /*:
