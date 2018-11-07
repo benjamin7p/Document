@@ -41,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1OS-41-hVA" kind="show" identifier="EditBook" id="wx4-Mx-qkp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -49,9 +52,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Favorite Books" id="l3L-p8-guE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1M3-DT-Y72">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0xB-d8-DLT">
                             <connections>
-                                <segue destination="1OS-41-hVA" kind="show" identifier="AddBook" id="ipb-dm-BV7"/>
+                                <segue destination="1OS-41-hVA" kind="show" identifier="AddBook" id="W8b-Zj-zTO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -63,7 +66,7 @@
         <!--Book Form Table View Controller-->
         <scene sceneID="9aB-EG-uPH">
             <objects>
-                <tableViewController id="1OS-41-hVA" customClass="BookFormTableViewController" sceneMemberID="viewController">
+                <tableViewController id="1OS-41-hVA" customClass="BookFormTableViewController" customModule="FavoriteBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="dBY-Lf-zFa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,4 +241,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="-69.715142428785612"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="W8b-Zj-zTO"/>
+    </inferredMetricsTieBreakers>
 </document>
