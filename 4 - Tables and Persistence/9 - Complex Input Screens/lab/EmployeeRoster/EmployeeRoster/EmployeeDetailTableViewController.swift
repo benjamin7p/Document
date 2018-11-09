@@ -11,6 +11,8 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var employeeTypeLabel: UILabel!
     
+    @IBOutlet weak var birthdayDatePicker: UIDatePicker!
+    
     var employee: Employee?
     
     override func viewDidLoad() {
@@ -34,6 +36,15 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
         }
     }
     
+    let birthdayDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
+    
+    var isbirthdayDatePickerShown: Bool = false {
+        didSet {
+            birthdayDatePicker.isHidden = !isbirthdayDatePickerShown
+        }
+    }
+   
+    
     @IBAction func saveButtonTapped(_ sender: Any) {
         if let name = nameTextField.text {
             employee = Employee(name: name, dateOfBirth: Date(), employeeType: .exempt)
@@ -51,5 +62,32 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return false
     }
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        switch (indexPath.section, indexPath.row) {
+        case (birthdayDatePickerCellIndexPath.section,
+              birthdayDatePickerCellIndexPath.row - 1):
+            if isbirthdayDatePickerShown {
+                isbirthdayDatePickerShown = false
+            } else { isbirthdayDatePickerShown = true }
+            
+            tableView.beginUpdates()
+            tableView.endUpdates()
+            
+        default: break
+        }
+    }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch (indexPath.section, indexPath.row) {
+        case (birthdayDatePickerCellIndexPath.section,
+              birthdayDatePickerCellIndexPath.row):
+            if isbirthdayDatePickerShown {
+                return 216.0
+            } else {
+                return 0.0
+        }
+        default:
+            return 44.0
+        }
+    }
 }

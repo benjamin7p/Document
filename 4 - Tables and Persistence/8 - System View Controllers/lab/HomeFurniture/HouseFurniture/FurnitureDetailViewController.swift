@@ -9,6 +9,8 @@ class FurnitureDetailViewController: UIViewController, UINavigationControllerDel
     @IBOutlet weak var furnitureTitleLabel: UILabel!
     @IBOutlet weak var furnitureDescriptionLabel: UILabel!
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +44,11 @@ class FurnitureDetailViewController: UIViewController, UINavigationControllerDel
             
             if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
                 imageView.image = selectedImage
+                
+                furniture?.imageData = UIImagePNGRepresentation(selectedImage)
+                
                 dismiss(animated: true, completion: nil)
+                updateView()
             }
             
         }
@@ -75,9 +81,16 @@ class FurnitureDetailViewController: UIViewController, UINavigationControllerDel
         alertController.popoverPresentationController?.sourceView = sender
         
         present(alertController, animated: true, completion: nil)
+        updateView()
     }
 
-    @IBAction func actionButtonTapped(_ sender: Any) {
+    @IBAction func actionButtonTapped(_ sender: UIButton) {
+        guard let image = imageView.image else {return}
+        let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityController.popoverPresentationController?.sourceView = sender
+        
+        present(activityController, animated: true, completion: nil)
+        updateView()
         
     }
     
