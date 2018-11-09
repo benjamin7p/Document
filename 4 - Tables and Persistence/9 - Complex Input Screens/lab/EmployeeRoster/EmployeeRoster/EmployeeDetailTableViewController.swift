@@ -35,7 +35,7 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
             navigationItem.title = "New Employee"
         }
     }
-    
+    // is editing birthday 
     let birthdayDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
     
     var isbirthdayDatePickerShown: Bool = false {

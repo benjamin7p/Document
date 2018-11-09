@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MCi-la-PJu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MCi-la-PJu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -92,7 +92,7 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tvH-Fl-nUA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="151"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="351"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,17 +101,17 @@
                             <constraint firstItem="uJt-Sg-fLy" firstAttribute="leading" secondItem="GGi-Pv-sON" secondAttribute="leading" id="52I-Vd-NDT"/>
                             <constraint firstItem="vuK-8P-mNL" firstAttribute="leading" secondItem="VZO-bn-IWp" secondAttribute="leadingMargin" id="8NX-Ji-TpV"/>
                             <constraint firstAttribute="bottom" secondItem="uJt-Sg-fLy" secondAttribute="bottom" id="BOu-KE-oZo"/>
+                            <constraint firstItem="tvH-Fl-nUA" firstAttribute="trailing" secondItem="GGi-Pv-sON" secondAttribute="trailing" id="GQO-6F-a1g"/>
+                            <constraint firstItem="tvH-Fl-nUA" firstAttribute="top" secondItem="GGi-Pv-sON" secondAttribute="top" id="HK8-aH-vln"/>
                             <constraint firstItem="vuK-8P-mNL" firstAttribute="top" secondItem="GGi-Pv-sON" secondAttribute="top" symbolic="YES" id="I6h-MZ-cFF"/>
                             <constraint firstItem="GGi-Pv-sON" firstAttribute="trailing" secondItem="uJt-Sg-fLy" secondAttribute="trailing" id="MLm-BF-FbO"/>
                             <constraint firstItem="vuK-8P-mNL" firstAttribute="trailing" secondItem="VZO-bn-IWp" secondAttribute="trailingMargin" id="Nxx-Lp-bO3"/>
-                            <constraint firstItem="tvH-Fl-nUA" firstAttribute="leading" secondItem="GGi-Pv-sON" secondAttribute="leading" id="OdO-V0-FXT"/>
+                            <constraint firstItem="lZi-td-9yR" firstAttribute="top" secondItem="tvH-Fl-nUA" secondAttribute="bottom" id="See-NY-8bX"/>
                             <constraint firstItem="lZi-td-9yR" firstAttribute="top" secondItem="vuK-8P-mNL" secondAttribute="bottom" constant="8" id="WDH-mD-Kvf"/>
-                            <constraint firstItem="lZi-td-9yR" firstAttribute="top" secondItem="tvH-Fl-nUA" secondAttribute="bottom" constant="200" id="epp-v7-mM4"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="tek-Sd-dSI" secondAttribute="trailing" id="i6v-1z-vdU"/>
+                            <constraint firstItem="tvH-Fl-nUA" firstAttribute="leading" secondItem="GGi-Pv-sON" secondAttribute="leading" id="loZ-MQ-LaL"/>
                             <constraint firstItem="lZi-td-9yR" firstAttribute="leading" secondItem="VZO-bn-IWp" secondAttribute="leadingMargin" id="njF-hH-JwE"/>
                             <constraint firstItem="tek-Sd-dSI" firstAttribute="top" secondItem="lZi-td-9yR" secondAttribute="bottom" constant="8" id="omo-5Z-X8C"/>
-                            <constraint firstItem="tvH-Fl-nUA" firstAttribute="top" secondItem="GGi-Pv-sON" secondAttribute="top" id="umf-4C-5VZ"/>
-                            <constraint firstItem="GGi-Pv-sON" firstAttribute="trailing" secondItem="tvH-Fl-nUA" secondAttribute="trailing" id="ws7-hl-Jv0"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="lZi-td-9yR" secondAttribute="trailing" id="xvr-qw-hwc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GGi-Pv-sON"/>

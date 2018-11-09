@@ -32,27 +32,26 @@ class FurnitureDetailViewController: UIViewController, UINavigationControllerDel
         furnitureDescriptionLabel.text = furniture.description
     }
     
-    @IBAction func choosePhotoButtonTapped(_ sender: UIButton) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imageView.image = selectedImage
+            
+            furniture?.imageData = UIImagePNGRepresentation(selectedImage)
+            
             dismiss(animated: true, completion: nil)
-            
+            updateView()
         }
         
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
         
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-            
-            if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-                imageView.image = selectedImage
-                
-                furniture?.imageData = UIImagePNGRepresentation(selectedImage)
-                
-                dismiss(animated: true, completion: nil)
-                updateView()
-            }
-            
-        }
-        
+    }
+    
+    @IBAction func choosePhotoButtonTapped(_ sender: UIButton) {
+
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         
