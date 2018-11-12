@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A052B7F2199D5510001E457 /* EmployeeTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A052B7E2199D5510001E457 /* EmployeeTypeTableViewController.swift */; };
+		9A052B812199D7F50001E457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A052B802199D7F40001E457 /* Main.storyboard */; };
 		A93AF3B91E4FB44E0099CF76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AF3B81E4FB44E0099CF76 /* AppDelegate.swift */; };
-		A93AF3BE1E4FB44E0099CF76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93AF3BC1E4FB44E0099CF76 /* Main.storyboard */; };
 		A93AF3C01E4FB44E0099CF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93AF3BF1E4FB44E0099CF76 /* Assets.xcassets */; };
 		A93AF3C31E4FB44E0099CF76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93AF3C11E4FB44E0099CF76 /* LaunchScreen.storyboard */; };
 		A93AF3CB1E4FB5240099CF76 /* EmployeeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93AF3CA1E4FB5240099CF76 /* EmployeeListTableViewController.swift */; };
@@ -17,9 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A052B7E2199D5510001E457 /* EmployeeTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTypeTableViewController.swift; sourceTree = "<group>"; };
+		9A052B802199D7F40001E457 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../../Main.storyboard; sourceTree = "<group>"; };
 		A93AF3B51E4FB44E0099CF76 /* EmployeeRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93AF3B81E4FB44E0099CF76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A93AF3BD1E4FB44E0099CF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A93AF3BF1E4FB44E0099CF76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A93AF3C21E4FB44E0099CF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A93AF3C41E4FB44E0099CF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +60,9 @@
 		A93AF3B71E4FB44E0099CF76 /* EmployeeRoster */ = {
 			isa = PBXGroup;
 			children = (
+				9A052B802199D7F40001E457 /* Main.storyboard */,
 				A93AF3B81E4FB44E0099CF76 /* AppDelegate.swift */,
-				A93AF3BC1E4FB44E0099CF76 /* Main.storyboard */,
+				9A052B7E2199D5510001E457 /* EmployeeTypeTableViewController.swift */,
 				A93AF3CA1E4FB5240099CF76 /* EmployeeListTableViewController.swift */,
 				A93AF3CC1E4FB5320099CF76 /* EmployeeDetailTableViewController.swift */,
 				A93AF3CE1E4FB5410099CF76 /* Employee.swift */,
@@ -129,9 +132,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A052B812199D7F50001E457 /* Main.storyboard in Resources */,
 				A93AF3C31E4FB44E0099CF76 /* LaunchScreen.storyboard in Resources */,
 				A93AF3C01E4FB44E0099CF76 /* Assets.xcassets in Resources */,
-				A93AF3BE1E4FB44E0099CF76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +148,7 @@
 				A93AF3CD1E4FB5320099CF76 /* EmployeeDetailTableViewController.swift in Sources */,
 				A93AF3B91E4FB44E0099CF76 /* AppDelegate.swift in Sources */,
 				A93AF3CF1E4FB5410099CF76 /* Employee.swift in Sources */,
+				9A052B7F2199D5510001E457 /* EmployeeTypeTableViewController.swift in Sources */,
 				A93AF3CB1E4FB5240099CF76 /* EmployeeListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,14 +156,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A93AF3BC1E4FB44E0099CF76 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A93AF3BD1E4FB44E0099CF76 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A93AF3C11E4FB44E0099CF76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

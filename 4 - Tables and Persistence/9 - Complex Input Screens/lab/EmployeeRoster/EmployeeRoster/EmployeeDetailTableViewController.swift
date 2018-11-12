@@ -1,7 +1,8 @@
 
 import UIKit
 
-class EmployeeDetailTableViewController: UITableViewController, UITextFieldDelegate {
+class EmployeeDetailTableViewController: UITableViewController, UITextFieldDelegate, EmployeeTypeDelegate {
+    
 
     struct PropertyKeys {
         static let unwindToListIndentifier = "UnwindToListSegue"
@@ -14,6 +15,7 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     @IBOutlet weak var birthdayDatePicker: UIDatePicker!
     
     var employee: Employee?
+    var employeeType: EmployeeType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,19 +37,29 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
             navigationItem.title = "New Employee"
         }
     }
-    // is editing birthday 
-    let birthdayDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
     
-    var isbirthdayDatePickerShown: Bool = false {
-        didSet {
-            birthdayDatePicker.isHidden = !isbirthdayDatePickerShown
-        }
+    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dobLabel.text = dateFormatter.string(from: birthdayDatePicker.date)
     }
-   
+   // updateView()
+    // value changed??
+
+// is editing birthday
+let birthdayDatePickerCellIndexPath = IndexPath(row: 2, section: 0)
+
+var isbirthdayDatePickerShown: Bool = false {
+    didSet {
+        birthdayDatePicker.isHidden = !isbirthdayDatePickerShown
+    }
     
-    @IBAction func saveButtonTapped(_ sender: Any) {
+}
+   
+    // change Date() to birthdayDatePicker
+    @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
         if let name = nameTextField.text {
-            employee = Employee(name: name, dateOfBirth: Date(), employeeType: .exempt)
+            employee = Employee(name: name, dateOfBirth: birthdayDatePicker.date, employeeType: .exempt)
             performSegue(withIdentifier: PropertyKeys.unwindToListIndentifier, sender: self)
         }
     }
@@ -69,7 +81,9 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
               birthdayDatePickerCellIndexPath.row - 1):
             if isbirthdayDatePickerShown {
                 isbirthdayDatePickerShown = false
-            } else { isbirthdayDatePickerShown = true }
+            } else { isbirthdayDatePickerShown = true
+                
+            }
             
             tableView.beginUpdates()
             tableView.endUpdates()
@@ -77,6 +91,11 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
         default: break
         }
     }
+    
+    func didSelect(employeeType: EmployeeType) {
+        self.employeeType = employeeType
+    }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch (indexPath.section, indexPath.row) {
         case (birthdayDatePickerCellIndexPath.section,
@@ -85,7 +104,7 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
                 return 216.0
             } else {
                 return 0.0
-        }
+            }
         default:
             return 44.0
         }
