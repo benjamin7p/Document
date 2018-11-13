@@ -9,6 +9,8 @@ import UIKit
 
 protocol EmployeeTypeDelegate {
     func didSelect(employeeType: EmployeeType)
+    
+    
 }
 
 class EmployeeTypeTableViewController: UITableViewController {
@@ -30,10 +32,7 @@ class EmployeeTypeTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+    
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -59,6 +58,7 @@ class EmployeeTypeTableViewController: UITableViewController {
         employeeType = EmployeeType.all[indexPath.row]
         delegate?.didSelect(employeeType: employeeType!)
         tableView.reloadData()
+        
     }
 
     /*

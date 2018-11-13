@@ -1,7 +1,7 @@
 
 import UIKit
 
-class EmployeeDetailTableViewController: UITableViewController, UITextFieldDelegate, EmployeeTypeDelegate {
+class EmployeeDetailTableViewController: UITableViewController, UITextFieldDelegate {
     
 
     struct PropertyKeys {
@@ -58,8 +58,8 @@ var isbirthdayDatePickerShown: Bool = false {
    
     // change Date() to birthdayDatePicker
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
-        if let name = nameTextField.text {
-            employee = Employee(name: name, dateOfBirth: birthdayDatePicker.date, employeeType: .exempt)
+        if let name = nameTextField.text, let employeeType = employeeType {
+            employee = Employee(name: name, dateOfBirth: birthdayDatePicker.date, employeeType: employeeType)
             performSegue(withIdentifier: PropertyKeys.unwindToListIndentifier, sender: self)
         }
     }
@@ -92,10 +92,6 @@ var isbirthdayDatePickerShown: Bool = false {
         }
     }
     
-    func didSelect(employeeType: EmployeeType) {
-        self.employeeType = employeeType
-    }
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch (indexPath.section, indexPath.row) {
         case (birthdayDatePickerCellIndexPath.section,
@@ -108,5 +104,18 @@ var isbirthdayDatePickerShown: Bool = false {
         default:
             return 44.0
         }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? EmployeeTypeTableViewController {
+            destination.delegate = self
+        }
+    }
+}
+
+extension EmployeeDetailTableViewController: EmployeeTypeDelegate{
+    func didSelect(employeeType: EmployeeType) {
+        self.employeeType = employeeType
+        employeeTypeLabel.text = employeeType.description()
+        employeeTypeLabel.textColor = .black
     }
 }
