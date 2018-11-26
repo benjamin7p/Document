@@ -16,7 +16,8 @@ func incrementSteps ()  {
     
     
 }
-
+incrementSteps()
+incrementSteps()
 
 
 
