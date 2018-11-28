@@ -77,7 +77,6 @@
 		9A98648221AC80D600ABA082 = {
 			isa = PBXGroup;
 			children = (
-				9A0385F421ADB5FC0006E68B /* ToDoViewController.swift */,
 				9A98648D21AC80D600ABA082 /* ToDList */,
 				9A9864A221AC80D800ABA082 /* ToDListTests */,
 				9A9864AD21AC80D800ABA082 /* ToDListUITests */,
@@ -98,6 +97,7 @@
 		9A98648D21AC80D600ABA082 /* ToDList */ = {
 			isa = PBXGroup;
 			children = (
+				9A0385F421ADB5FC0006E68B /* ToDoViewController.swift */,
 				9A98648E21AC80D600ABA082 /* AppDelegate.swift */,
 				9A98649221AC80D600ABA082 /* Main.storyboard */,
 				9A98649521AC80D800ABA082 /* Assets.xcassets */,
