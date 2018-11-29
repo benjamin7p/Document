@@ -34,7 +34,7 @@
                                 <rect key="frame" x="20" y="349" width="335" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJe-ru-Pri"/>
+                                    <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIZ-px-TnM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,7 +57,7 @@
                     </view>
                     <connections>
                         <outlet property="email" destination="2Bz-qu-asX" id="bBt-bN-dzC"/>
-                        <segue destination="dCW-zE-cLh" kind="show" id="snT-O9-62b"/>
+                        <segue destination="dCW-zE-cLh" kind="show" identifier="toEntered" id="snT-O9-62b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -67,7 +67,7 @@
         <!--View Controller-->
         <scene sceneID="cof-TQ-xIx">
             <objects>
-                <viewController id="dCW-zE-cLh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="youWin" id="dCW-zE-cLh" customClass="ViewController" customModule="Contest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WXw-Y3-Mgi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
