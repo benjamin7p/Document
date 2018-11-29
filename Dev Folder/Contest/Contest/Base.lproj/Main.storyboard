@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Contest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter email to win 80 billion $!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G21-w6-Ptg">
+                                <rect key="frame" x="20" y="142" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.86467778500000003" green="0.046487561619999999" blue="0.082766858439999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Bz-qu-asX">
+                                <rect key="frame" x="20" y="171" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvD-QB-NR6">
+                                <rect key="frame" x="20" y="349" width="335" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJe-ru-Pri"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Bz-qu-asX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6jx-0E-ZB4"/>
+                            <constraint firstItem="dvD-QB-NR6" firstAttribute="top" secondItem="2Bz-qu-asX" secondAttribute="bottom" constant="148" id="Bva-yw-C3c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G21-w6-Ptg" secondAttribute="bottom" constant="504" id="CSU-RH-ON3"/>
+                            <constraint firstItem="2Bz-qu-asX" firstAttribute="top" secondItem="G21-w6-Ptg" secondAttribute="bottom" constant="8" id="EKF-On-bsQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dvD-QB-NR6" secondAttribute="bottom" constant="288" id="NUW-dW-Mai"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G21-w6-Ptg" secondAttribute="trailing" constant="20" id="Pc1-3w-XJt"/>
+                            <constraint firstItem="G21-w6-Ptg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R5f-Sf-dB7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Bz-qu-asX" secondAttribute="trailing" constant="20" id="Zir-ly-tQL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dvD-QB-NR6" secondAttribute="trailing" constant="20" id="aJo-nP-8Tr"/>
+                            <constraint firstItem="G21-w6-Ptg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122" id="lG2-9K-b6P"/>
+                            <constraint firstItem="dvD-QB-NR6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lfo-hE-PSX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Bz-qu-asX" secondAttribute="bottom" constant="466" id="t2a-4f-CsC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="2Bz-qu-asX" id="bBt-bN-dzC"/>
+                        <segue destination="dCW-zE-cLh" kind="show" id="snT-O9-62b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cof-TQ-xIx">
+            <objects>
+                <viewController id="dCW-zE-cLh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXw-Y3-Mgi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have entered the contest!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-Py-OTP">
+                                <rect key="frame" x="20" y="248" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.063710862336088359" blue="0.72973061940224326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CQs-Py-OTP" firstAttribute="leading" secondItem="qzd-Dv-0vK" secondAttribute="leading" constant="20" id="NvL-B8-avQ"/>
+                            <constraint firstItem="CQs-Py-OTP" firstAttribute="top" secondItem="qzd-Dv-0vK" secondAttribute="top" constant="228" id="qyn-cZ-NUI"/>
+                            <constraint firstItem="qzd-Dv-0vK" firstAttribute="trailing" secondItem="CQs-Py-OTP" secondAttribute="trailing" constant="20" id="uhq-fk-qCo"/>
+                            <constraint firstItem="qzd-Dv-0vK" firstAttribute="bottom" secondItem="CQs-Py-OTP" secondAttribute="bottom" constant="398" id="xXI-af-Zie"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qzd-Dv-0vK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVy-SD-8Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="134"/>
+        </scene>
+    </scenes>
+</document>
