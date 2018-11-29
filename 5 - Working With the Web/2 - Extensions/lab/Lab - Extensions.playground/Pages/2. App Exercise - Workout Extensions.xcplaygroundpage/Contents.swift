@@ -28,23 +28,23 @@ extension Workout {
     var speed: Double {
         return distance / time
     }
-}
+
 
 /*:
  Now add a method `harderWorkout` that takes no parameters and returns another `Workout` instance. This method should double the `distance` and `time` properties, and add 40 to `averageHR`. Create an instance of `Workout` and print it to the console. Then call `harderWorkout` and print the new `Workout` instance to the console
  */
-extension Workout {
-    func harderWorkout()  {
-        time * 2
-        distance * 2
-        averageHR + 40
+
+func harderWorkout() -> Workout {
+        return Workout(distance: distance * 2, time: time * 2, averageHR: averageHR + 40)
         
     }
 }
-let workout1 = Workout(distance: 10, time: 10, averageHR: 4)
+let workout1 = Workout(distance: 10, time: 10, averageHR: 5)
 print(workout1)
+workout1.harderWorkout()
+print(workout1.harderWorkout())
 
-workout1.harderWorkout
+
 
 
 
