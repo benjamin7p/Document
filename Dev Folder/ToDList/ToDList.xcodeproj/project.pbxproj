@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A02DF3521B1E589005008CF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A02DF3421B1E589005008CF /* TableViewController.swift */; };
 		9A0385F521ADB5FC0006E68B /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0385F421ADB5FC0006E68B /* ToDoViewController.swift */; };
 		9A03D3CB21B051A300B4084E /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A03D3CA21B051A300B4084E /* ToDoTableViewController.swift */; };
 		9A98648F21AC80D600ABA082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A98648E21AC80D600ABA082 /* AppDelegate.swift */; };
@@ -15,6 +16,7 @@
 		9A98649921AC80D800ABA082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A98649721AC80D800ABA082 /* LaunchScreen.storyboard */; };
 		9A9864A421AC80D800ABA082 /* ToDListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9864A321AC80D800ABA082 /* ToDListTests.swift */; };
 		9A9864AF21AC80D800ABA082 /* ToDListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9864AE21AC80D800ABA082 /* ToDListUITests.swift */; };
+		9AAE868C21B1A894009B7E93 /* Checked.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9AAE868B21B1A894009B7E93 /* Checked.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A02DF3421B1E589005008CF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9A0385F421ADB5FC0006E68B /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		9A03D3CA21B051A300B4084E /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		9A98648B21AC80D600ABA082 /* ToDList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +52,7 @@
 		9A9864AA21AC80D800ABA082 /* ToDListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9864AE21AC80D800ABA082 /* ToDListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDListUITests.swift; sourceTree = "<group>"; };
 		9A9864B021AC80D800ABA082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AAE868B21B1A894009B7E93 /* Checked.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Checked.pdf; path = "../../../4 - Tables and Persistence/Guided Project - List/Checked.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +106,10 @@
 				9A0385F421ADB5FC0006E68B /* ToDoViewController.swift */,
 				9A98648E21AC80D600ABA082 /* AppDelegate.swift */,
 				9A98649221AC80D600ABA082 /* Main.storyboard */,
+				9A02DF3421B1E589005008CF /* TableViewController.swift */,
 				9A03D3CA21B051A300B4084E /* ToDoTableViewController.swift */,
 				9A98649521AC80D800ABA082 /* Assets.xcassets */,
+				9AAE868B21B1A894009B7E93 /* Checked.pdf */,
 				9A98649721AC80D800ABA082 /* LaunchScreen.storyboard */,
 				9A98649A21AC80D800ABA082 /* Info.plist */,
 			);
@@ -234,6 +240,7 @@
 			files = (
 				9A98649921AC80D800ABA082 /* LaunchScreen.storyboard in Resources */,
 				9A98649621AC80D800ABA082 /* Assets.xcassets in Resources */,
+				9AAE868C21B1A894009B7E93 /* Checked.pdf in Resources */,
 				9A98649421AC80D600ABA082 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +269,7 @@
 				9A0385F521ADB5FC0006E68B /* ToDoViewController.swift in Sources */,
 				9A03D3CB21B051A300B4084E /* ToDoTableViewController.swift in Sources */,
 				9A98648F21AC80D600ABA082 /* AppDelegate.swift in Sources */,
+				9A02DF3521B1E589005008CF /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
