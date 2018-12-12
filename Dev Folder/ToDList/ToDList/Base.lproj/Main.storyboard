@@ -106,7 +106,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILa-9I-h9z">
-                                                    <rect key="frame" x="32" y="22" width="72" height="12.5"/>
+                                                    <rect key="frame" x="32" y="22" width="72" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -118,7 +118,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zbn-CX-JAY">
-                                                    <rect key="frame" x="0.0" y="34.5" width="375" height="165"/>
+                                                    <rect key="frame" x="0.0" y="42.5" width="375" height="165"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="165" id="h5g-yB-tWH"/>
                                                     </constraints>
@@ -134,7 +134,6 @@
                                                 <constraint firstItem="zbn-CX-JAY" firstAttribute="leading" secondItem="JtU-Iv-9TY" secondAttribute="leading" id="8ur-3P-5lr"/>
                                                 <constraint firstItem="ILa-9I-h9z" firstAttribute="top" secondItem="JtU-Iv-9TY" secondAttribute="topMargin" constant="11" id="Pgz-gf-2E4"/>
                                                 <constraint firstItem="zbn-CX-JAY" firstAttribute="top" secondItem="ILa-9I-h9z" secondAttribute="bottom" id="R9y-iS-EEW"/>
-                                                <constraint firstAttribute="bottom" secondItem="zbn-CX-JAY" secondAttribute="bottom" id="lwj-UO-O1l"/>
                                                 <constraint firstItem="Wnd-Iy-5aH" firstAttribute="top" secondItem="JtU-Iv-9TY" secondAttribute="topMargin" constant="11" id="vom-Uc-5f2"/>
                                                 <constraint firstItem="ILa-9I-h9z" firstAttribute="leading" secondItem="JtU-Iv-9TY" secondAttribute="leadingMargin" constant="16" id="vqO-Qw-8TG"/>
                                                 <constraint firstItem="Wnd-Iy-5aH" firstAttribute="trailing" secondItem="JtU-Iv-9TY" secondAttribute="trailingMargin" constant="16" id="x5W-ko-OGW"/>
@@ -190,7 +189,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="dueDateDatePicker" destination="zbn-CX-JAY" id="vjG-qx-Xh2"/>
+                        <outlet property="dueDateDatePickerView" destination="zbn-CX-JAY" id="FAX-Th-9TZ"/>
                         <outlet property="dueDateLabel" destination="Wnd-Iy-5aH" id="Psz-eK-TAz"/>
                         <outlet property="isCompleteButton" destination="ZLY-gD-gLG" id="m5c-q2-DFK"/>
                         <outlet property="notesTextView" destination="6Cw-Td-MeV" id="FHx-rF-mOI"/>

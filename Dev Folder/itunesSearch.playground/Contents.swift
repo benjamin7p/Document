@@ -29,7 +29,7 @@ extension URL {
     }
 }
 
-let query: [String: String] = ["term": "Deftones", "media": "all" ]
+let query: [String: String] = ["term": "Thrice", "media": "all" ]
 let query2: [String: String] = ["term": "pulp+fiction", "media":"all" ]
 
 let baseUrl = URL(string: "https://itunes.apple.com/search")
@@ -46,4 +46,12 @@ if let data = data,
 }
 task.resume()
 
-//PlaygroundPage.current.finishExecution()
+PlaygroundPage.current.finishExecution()
+
+
+struct StoreItem {
+    var name: String
+    var album: String
+    var track: String
+    var url: URL
+}
