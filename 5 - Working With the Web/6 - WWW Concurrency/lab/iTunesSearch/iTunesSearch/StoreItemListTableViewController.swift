@@ -6,9 +6,10 @@ class StoreItemListTableViewController: UITableViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var filterSegmentedControl: UISegmentedControl!
     
+    let storeItemController = StoreItemController()
     // add item controller property
     
-    var items = [String]()
+    var items = [StoreItem]()
     
     let queryOptions = ["movie", "music", "software", "ebook"]
     
@@ -39,7 +40,7 @@ class StoreItemListTableViewController: UITableViewController {
         
         let item = items[indexPath.row]
         
-        cell.textLabel?.text = item
+        cell.textLabel?.text = item.artist
         
         // set label to the item's name
         // set detail label to the item's subtitle
