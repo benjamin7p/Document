@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct StoreItems: Codable {
+    let results: [StoreItem]
+}
+
 struct StoreItem: Codable {
     var artist: String
     var title: String
@@ -23,6 +27,11 @@ struct StoreItem: Codable {
         case longDescription
     }
     
+    enum AdditionalKeys: String, CodingKey {
+        case longDescription
+    }
+    
+    
     init(from decoder: Decoder) throws {
         let valueContainer = try decoder.container(keyedBy: CodingKeys.self)
         artist = try valueContainer.decode(String.self, forKey: CodingKeys.artist)
@@ -37,12 +46,7 @@ struct StoreItem: Codable {
             longDescription = (try? additionalValues.decode(String.self, forKey: AdditionalKeys.longDescription)) ?? ""
         }
     }
-    enum AdditionalKeys: String, CodingKey {
-        case longDescription
-    }
-}
-
-struct StoreItems: Codable {
-    let results: [StoreItem]
+    
+    
 }
 

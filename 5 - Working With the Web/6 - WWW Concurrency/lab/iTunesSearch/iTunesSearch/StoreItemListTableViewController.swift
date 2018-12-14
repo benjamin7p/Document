@@ -27,17 +27,31 @@ class StoreItemListTableViewController: UITableViewController {
         let mediaType = queryOptions[filterSegmentedControl.selectedSegmentIndex]
         
         if !searchTerm.isEmpty {
+            var searchedItems = ["term": searchTerm, "media": mediaType, "limit": "25", "lang": "en_us"]
             
             // set up query dictionary
-            
+            StoreItemController().fetchItems(matching: searchedItems) { (storeItems) in
+                if storeItems != nil {
+                    let storeItems = storeItems
+                    DispatchQueue.main.async {
+                        self.items = storeItems!
+                        self.tableView.reloadData()
+
+                    }
+                } else {
+                    print("Data did not load")
+                }
+            }
             // use the item controller to fetch items
             // if successful, use the main queue to set self.items and reload the table view
             // otherwise, print an error to the console
         }
     }
-    
+//    photoInfoController.fetchPhotoInfo { (photoInfo) in
+//    if let photoInfo = photoInfo {
+//    self.updateUI(with: photoInfo)
     func configure(cell: UITableViewCell, forItemAt indexPath: IndexPath) {
-        
+    
         let item = items[indexPath.row]
         
         cell.textLabel?.text = item.artist
@@ -86,4 +100,5 @@ extension StoreItemListTableViewController: UISearchBarDelegate {
         fetchMatchingItems()
         searchBar.resignFirstResponder()
     }
+    
 }
