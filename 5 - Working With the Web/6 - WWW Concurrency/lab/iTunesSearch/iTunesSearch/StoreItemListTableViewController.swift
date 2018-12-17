@@ -6,7 +6,7 @@ class StoreItemListTableViewController: UITableViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var filterSegmentedControl: UISegmentedControl!
     
-    let storeItemController = StoreItemController()
+    let itemController = StoreItemController()
     // add item controller property
     
     var items = [StoreItem]()
@@ -27,35 +27,47 @@ class StoreItemListTableViewController: UITableViewController {
         let mediaType = queryOptions[filterSegmentedControl.selectedSegmentIndex]
         
         if !searchTerm.isEmpty {
-            var searchedItems = ["term": searchTerm, "media": mediaType, "limit": "25", "lang": "en_us"]
+            let query = ["term": searchTerm, "media": mediaType, "limit": "25", "lang": "en_us"]
             
             // set up query dictionary
-            StoreItemController().fetchItems(matching: searchedItems) { (storeItems) in
-                if storeItems != nil {
-                    let storeItems = storeItems
-                    DispatchQueue.main.async {
-                        self.items = storeItems!
+            itemController.fetchItems(matching: query, completion: { (items) in
+                
+                DispatchQueue.main.async {
+                    
+                    if let items = items {
+                        self.items = items
                         self.tableView.reloadData()
-
+                    } else {
+                        print("Unable to load data.")
                     }
-                } else {
-                    print("Data did not load")
                 }
-            }
+            })
+        }
+    }
             // use the item controller to fetch items
             // if successful, use the main queue to set self.items and reload the table view
             // otherwise, print an error to the console
-        }
-    }
-//    photoInfoController.fetchPhotoInfo { (photoInfo) in
-//    if let photoInfo = photoInfo {
-//    self.updateUI(with: photoInfo)
+    
+
     func configure(cell: UITableViewCell, forItemAt indexPath: IndexPath) {
     
         let item = items[indexPath.row]
         
-        cell.textLabel?.text = item.artist
+        cell.textLabel?.text = item.name
+        cell.detailTextLabel?.text = item.artist
         
+
+        let newTask = URLSession.shared.dataTask(with: item.url) { (data, response, error) in
+            if let data = data {
+                DispatchQueue.main.async {
+                    let image = UIImage(data: data)
+                    cell.imageView?.image = image
+                }
+                
+            }
+            
+        }
+        newTask.resume()
         // set label to the item's name
         // set detail label to the item's subtitle
         // reset the image view to the gray image

@@ -182,18 +182,13 @@
                                 <segue destination="eAa-t2-cfn" kind="unwind" identifier="saveUnwind" unwindAction="unwindToToDoListWithSegue:" id="AEU-eE-OcK"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="DmT-Kg-dIV">
-                            <connections>
-                                <segue destination="eAa-t2-cfn" kind="unwind" unwindAction="unwindToToDoListWithSegue:" id="jG6-Bx-634"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="DmT-Kg-dIV"/>
                     </navigationItem>
                     <connections>
                         <outlet property="dueDateDatePickerView" destination="zbn-CX-JAY" id="FAX-Th-9TZ"/>
                         <outlet property="dueDateLabel" destination="Wnd-Iy-5aH" id="Psz-eK-TAz"/>
                         <outlet property="isCompleteButton" destination="ZLY-gD-gLG" id="m5c-q2-DFK"/>
                         <outlet property="notesTextView" destination="6Cw-Td-MeV" id="FHx-rF-mOI"/>
-                        <outlet property="saveButton" destination="DmT-Kg-dIV" id="wK3-7v-Vvc"/>
                         <outlet property="titleTextField" destination="z6F-ce-KM5" id="EJE-7a-sX9"/>
                     </connections>
                 </tableViewController>

@@ -21,7 +21,7 @@ struct StoreItemController {
             print(response!)
             print(String(data: data!, encoding: .utf8)!)
             if let data = data,
-                let storeItems = try? jsonDecoder.decode(StoreItem.self, from: data) {
+                let storeItems = try? jsonDecoder.decode(StoreItems.self, from: data) {
                 completion(storeItems.results)
             }
             
@@ -31,14 +31,8 @@ struct StoreItemController {
         
     }
     
-
-    
 }
 
-//let photoInfo = try? jsonDecoder.decode(PhotoInfo.self, from: data) {
-//completion(photoInfo) photoinfo = name of struct
-//self.title = photoInfo.title
-//self.imageView.image = image
-//self.descriptionLabel.text = photoInfo.description
+
 
 

@@ -34,18 +34,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HZh-HB-y3T">
-                                            <rect key="frame" x="16" y="30" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="131" y="30" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" id="bzK-Zx-ipo">
-                                            <rect key="frame" x="15" y="0.0" width="99" height="99"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="gray" id="bzK-Zx-ipo">
+                                            <rect key="frame" x="16" y="0.0" width="100" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qyc-uX-AsD">
-                                            <rect key="frame" x="16" y="53.5" width="33" height="14.5"/>
+                                            <rect key="frame" x="131" y="53.5" width="33" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -104,4 +104,7 @@
             <point key="canvasLocation" x="-110" y="266"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gray" width="200" height="200"/>
+    </resources>
 </document>
