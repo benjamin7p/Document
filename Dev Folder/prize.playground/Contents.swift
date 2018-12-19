@@ -61,6 +61,8 @@ class NobelService  {
                 let response = try? jsonDecoder.decode(NobelResponse.self, from: data)
                 completion(response)
                 
+            } else {
+                print("Could not load data")
             }
         }
         task.resume()
@@ -69,12 +71,12 @@ class NobelService  {
     
 }
 let newCLass = NobelService()
-newCLass.requestData(query: ["year": "2017", "category": "physics"], completion: { response in
+newCLass.requestData(query: ["year": "2016", "category": "physics"], completion: { response in
     print(response)
 })
 
 
-
+PlaygroundPage.current.finishExecution()
 
 
 
