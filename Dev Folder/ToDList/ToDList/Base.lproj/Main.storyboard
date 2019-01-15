@@ -55,6 +55,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="isCompleteButton" destination="dcW-6i-V16" id="UdW-eq-zgZ"/>
+                                    <outlet property="titleLabel" destination="yio-Vs-2EI" id="cSz-fU-7eE"/>
                                     <segue destination="Z6P-BP-PIM" kind="show" identifier="showDetails" id="icB-Dn-Zgc"/>
                                 </connections>
                             </tableViewCell>
@@ -255,7 +257,6 @@
             <objects>
                 <navigationController id="FXB-ci-uO9" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZoI-32-r7f">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
