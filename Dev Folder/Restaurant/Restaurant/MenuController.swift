@@ -8,9 +8,10 @@
 
 import Foundation
 
-class MenuContoller {
+class MenuController {
     
-    static let shared = MenuContoller()
+    static let shared = MenuController()
+    
     
     let baseURL = URL(string: "http://localhost:8090/")!
     
@@ -72,4 +73,11 @@ class MenuContoller {
         task.resume()
     }
     
+    static let orderUpdatedNotification = Notification.Name("menuController.orderUpdated")
+    
+    var order = Order() {
+        didSet {
+            NotificationCenter.default.post(name: MenuController.orderUpdatedNotification, object: nil)
+        }
+    }
 }
