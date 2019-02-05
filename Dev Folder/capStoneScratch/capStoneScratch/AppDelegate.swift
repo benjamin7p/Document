@@ -1,39 +1,21 @@
 //
 //  AppDelegate.swift
-//  Restaurant
+//  capStoneScratch
 //
-//  Created by Benjamin Poulsen PRO on 1/4/19.
+//  Created by Benjamin Poulsen PRO on 2/5/19.
 //  Copyright © 2019 Benjamin Poulsen PRO. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
-
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    var orderTabBarItem: UITabBarItem!
-    
-    @objc func updateOrderBadge() {
-        switch MenuController.shared.order.menuItems.count {
-        case 0:
-            orderTabBarItem.badgeValue = nil
-        case let count:
-            orderTabBarItem.badgeValue = String(count)
-        }
-    }
-    
+
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let temporaryDirectory = NSTemporaryDirectory()
-        let urlCache = URLCache(memoryCapacity: 25_000_000, diskCapacity: 50_000_000, diskPath: temporaryDirectory)
-        URLCache.shared = urlCache
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(updateOrderBadge), name: MenuController.orderUpdatedNotification, object: nil)
-        
-        orderTabBarItem = (self.window!.rootViewController! as! UITabBarController).viewControllers![1].tabBarItem
+        // Override point for customization after application launch.
         return true
     }
 
